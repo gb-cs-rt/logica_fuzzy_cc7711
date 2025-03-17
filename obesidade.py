@@ -1,11 +1,11 @@
-#pip install scikit-fuzzy
+# pip install scikit-fuzzy
 
 import numpy as np
 import skfuzzy as fuzz
 import matplotlib.pyplot as plt
 from skfuzzy import control as ctrl
 
-#Variaveis de Entrada (Antecedent)
+# Variaveis de Entrada (Antecedent)
 comer = ctrl.Antecedent(np.arange(0, 12, 1), 'comer') # 1000 kcal
 tempoAtvFisica = ctrl.Antecedent(np.arange(0, 240, 1), 'tempoAtvFisica') # minutos
 
@@ -15,7 +15,7 @@ peso = ctrl.Consequent(np.arange(0, 14, 1), 'peso')
 # Funções de pertinência
 
 # Tempo de Atividade Física
-tipo_atv_fisica = "triangular"
+tipo_atv_fisica = "gaussiana"
 
 if tipo_atv_fisica == "triangular":
     tempoAtvFisica.automf(names=['pouco tempo', 'tempo medio', 'muito tempo'])
@@ -29,7 +29,7 @@ elif tipo_atv_fisica == "gaussiana":
     tempoAtvFisica['muito tempo'] = fuzz.gaussmf(tempoAtvFisica.universe, 240, 20)
 
 # Comer
-tipo_comer = "trapezoidal"
+tipo_comer = "gaussiana"
 
 if tipo_comer == "triangular":
     comer.automf(names=['pouco', 'razoavel', 'bastante'])
@@ -43,7 +43,7 @@ elif tipo_comer == "gaussiana":
     comer['bastante'] = fuzz.gaussmf(comer.universe, 12, 2)
 
 # Peso
-tipo_peso = "trapezoidal"
+tipo_peso = "gaussiana"
 
 if tipo_peso == "triangular":
     peso.automf(names=['peso leve', 'peso medio', 'pesado'])
