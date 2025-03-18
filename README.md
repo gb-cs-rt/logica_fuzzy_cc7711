@@ -90,5 +90,69 @@
 ![Figure_2](https://github.com/user-attachments/assets/bf251d50-6948-4c72-9666-f9e308ee5ec6)<br>
 ![Figure_3](https://github.com/user-attachments/assets/22982874-7ee9-40f4-a921-974f06e8d57b)<br>
 
+# Comparação dos Diferentes Modelos
 
+## 1. Apenas com a variável "Comer" (Relação Comer–Peso)
 
+### Triangular  
+- **Resultado:** Peso = 6.46  
+- Apresenta uma resposta intermediária, com um aumento gradual conforme o valor de “comer” se aproxima do pico da função triangular.
+
+### Trapezoidal  
+- **Resultado:** Peso = 8.29  
+- O modelo trapezoidal resulta em um valor mais elevado.  
+- Pela análise de sensibilidade, para valores menores de “comer” (0 a 2), o peso é constante (2.53), e há um **salto significativo** a partir de Comer = 3, atingindo a saturação em torno de 8.98 para valores de 5 a 10.  
+- Isso indica uma **zona de insensibilidade** após um certo ponto, característica da forma trapezoidal com topo plano.
+
+### Gaussiana  
+- **Resultado:** Peso = 5.99  
+- A função gaussiana, com sua transição suave, resulta num valor levemente inferior ao triangular para o mesmo teste, sugerindo uma **sensibilidade maior** às variações na entrada.
+
+---
+
+## 2. Inclusão da variável adicional "Tempo de Atividade Física" (Relação Comer–TempoAtvFisica–Peso)
+
+Com as regras que combinam as duas entradas, os resultados obtidos foram:
+
+### Triangular  
+- **Resultado:** Peso = 9.63  
+
+### Trapezoidal  
+- **Resultado:** Peso = 10.96  
+
+### Gaussiana  
+- **Resultado:** Peso = 10.36  
+
+### Observações  
+- **Aumento Geral:**  
+  A inclusão de “Tempo de Atividade Física” fez com que os valores do “peso” fossem maiores, refletindo a contribuição adicional dessa variável no sistema de regras fuzzy.  
+
+- **Comparação entre os Modelos:**  
+  - O modelo **trapezoidal** continua a fornecer o valor mais alto, sugerindo que sua forma (com uma região plana de alta pertinência) pode levar a uma decisão mais “pesada” sob as condições testadas.  
+  - O **gaussiano** apresenta um valor intermediário, com a suavidade típica dessa função permitindo uma transição mais gradual entre as classes.  
+  - O **triangular** resulta no valor mais baixo neste conjunto de testes, o que pode indicar que, nesse cenário, sua forma mais “pontiaguda” traduz uma menor acumulação de pertinência para os mesmos inputs.
+
+---
+
+## 3. Conclusão
+
+### Sensibilidade e Saturação  
+O teste de sensibilidade para o modelo trapezoidal evidencia uma **zona de saturação** onde, após um determinado valor de “comer”, a saída (Peso) se mantém constante. Isso pode ser **vantajoso ou limitante**, dependendo da aplicação.
+
+### Impacto da Escolha da Função de Pertinência  
+A escolha da função de pertinência (**triangular, trapezoidal ou gaussiana**) afeta significativamente o comportamento do sistema fuzzy.  
+- O **trapezoidal** tende a amplificar a saída em certas faixas (devido ao topo plano).  
+- O **gaussiano** oferece transições suaves.  
+- O **triangular** pode responder de forma mais linear, porém com menor amplitude nos testes apresentados.
+
+### Integração de Novas Variáveis  
+A adição da variável “Tempo de Atividade Física” **elevou os valores de saída em todos os modelos**, porém a ordem relativa dos resultados (**trapezoidal > gaussiano > triangular**) se manteve.  
+Isso demonstra que a **combinação das variáveis e as regras definidas podem interagir de forma diferente**, dependendo da função de pertinência utilizada.
+
+Essa análise comparativa permite entender que a **escolha do modelo** deve considerar não só a **interpretação dos dados**, mas também o **comportamento desejado do sistema fuzzy** em termos de **sensibilidade e resposta à variação das entradas**.
+
+# Experiência e exemplo de aplicação
+
+A resolução do problema envolveu comparar diferentes funções de pertinência (triangular, trapezoidal e gaussiana) para avaliar como influenciam a saída do sistema fuzzy. Foi possível observar que cada função responde de forma distinta às variações nas entradas, com diferenças na suavidade da transição e na saturação dos valores. Além disso, a inclusão da variável "Tempo de Atividade Física" demonstrou como múltiplos fatores podem ser combinados para influenciar a decisão.
+
+Um exemplo de aplicação da lógica fuzzy seria em sistemas de controle de ar-condicionado inteligente, onde fatores como temperatura ambiente, umidade e número de pessoas na sala poderiam ser usados para ajustar automaticamente a potência do resfriamento, garantindo maior conforto e eficiência energética.
