@@ -33,6 +33,21 @@
 ![Figure_1](https://github.com/user-attachments/assets/d1c57950-84a7-489b-91ae-4008f2734beb)<br>
 ![Figure_2](https://github.com/user-attachments/assets/3701669c-cebd-4136-af0c-fc366f699204)<br>
 
+# Análise de Sensibilidade
+![image](https://github.com/user-attachments/assets/f845fcae-81cc-4216-ad6d-3fcb89713320)
+![image](https://github.com/user-attachments/assets/7e1a6fb0-5cb6-46be-acbc-028ed18a9262)
+![image](https://github.com/user-attachments/assets/93662799-67d1-4500-b018-819b62390848)
+![image](https://github.com/user-attachments/assets/a3801fb1-06c0-4df3-9e64-469894aaf9f0)
+![image](https://github.com/user-attachments/assets/d3fc6b8d-806e-4c53-8c4c-75511cffe67f)
+![image](https://github.com/user-attachments/assets/5c1fb0b9-79e0-4ecc-85da-33006d4ea1d7)
+![image](https://github.com/user-attachments/assets/94254f66-4914-4bda-8f65-828e0e44eea5)
+![image](https://github.com/user-attachments/assets/37869e5b-3e38-4b67-9d36-9223489b063d)
+![image](https://github.com/user-attachments/assets/2a9f305c-8f2b-49e7-b3f2-9dd093d7c863)
+![image](https://github.com/user-attachments/assets/382b32cd-2f19-4674-bcab-9bdb60a719fc)<br>
+![image](https://github.com/user-attachments/assets/efc7ec92-e0af-4f75-8a43-edec8157ff2d)
+
+
+
 # Inclusão de nova variável de entrada: Tempo de Atividade Física
 
 ## Regras:
