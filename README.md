@@ -84,7 +84,7 @@
 ### Funções de Pertinência
 ![gaussiana_tempoatvfisica](https://github.com/user-attachments/assets/c59c49d3-ffae-47c9-aa93-17bc7e162ec4)<br>
 
-## Teste (Comer = 5)
+## Teste (Comer = 5, TempoAtvFisica = 10)
 ![resultado](https://github.com/user-attachments/assets/2f3de150-b981-4dd5-ac0a-219cc785ba32)<br>
 ![Figure_1](https://github.com/user-attachments/assets/ff072110-b054-4e4f-8921-0faa91b69324)<br>
 ![Figure_2](https://github.com/user-attachments/assets/bf251d50-6948-4c72-9666-f9e308ee5ec6)<br>
